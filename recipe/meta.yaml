@@ -25,7 +25,6 @@ requirements:
     - astropy-base
     - corner
     - dynesty
-    - ffmpeg
     - matplotlib-base
     - multiprocess
     - numpy
@@ -47,7 +46,6 @@ test:
     - astropy-base
     - corner
     - dynesty
-    - ffmpeg
     - matplotlib-base
     - multiprocess
     - numpy
