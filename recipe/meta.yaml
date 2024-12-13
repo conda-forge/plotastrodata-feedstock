@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/plotastrodata-{{ version }}.tar.gz
-  sha256: 3d3722259e8cb22b1f227dc591776bbac4b7cddac8fa478cbb801793dfe5be8c
+  sha256: dd6614ea1fd5be71ae5c6099d387191b34e9eba87a93223c171f6482ae9e4770
 
 build:
   noarch: python
