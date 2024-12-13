@@ -26,7 +26,6 @@ requirements:
     - corner
     - dynesty
     - ffmpeg
-    - ffmpeg-python
     - matplotlib-base
     - multiprocess
     - numpy
@@ -45,6 +44,19 @@ test:
   requires:
     - pip
     - python {{ python_min }}
+    - astropy-base
+    - corner
+    - dynesty
+    - ffmpeg
+    - matplotlib-base
+    - multiprocess
+    - numpy
+    - pillow
+    - plotly
+    - ptemcee
+    - scikit-image
+    - scipy
+    - tqdm
 
 about:
   home: https://github.com/yusukeaso-astron/plotastrodata
