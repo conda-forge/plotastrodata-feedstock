@@ -26,6 +26,7 @@ requirements:
     - corner
     - dynesty
     - ffmpeg
+    - ffmpeg-python
     - matplotlib-base
     - multiprocess
     - numpy
