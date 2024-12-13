@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "plotastrodata" %}
-{% set version = "1.0.2" %}
+{% set version = "1.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/plotastrodata-{{ version }}.tar.gz
-  sha256: 260fc5493c52d412fe32e091d2de3afef7728143391df600c151034e161f2274
+  sha256: 3d3722259e8cb22b1f227dc591776bbac4b7cddac8fa478cbb801793dfe5be8c
 
 build:
   noarch: python
@@ -22,12 +22,19 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - numpy
-    - scipy
     - astropy-base
-    - matplotlib-base
-    - ptemcee
     - corner
+    - dynesty
+    - ffmpeg
+    - matplotlib-base
+    - multiprocess
+    - numpy
+    - pillow
+    - plotly
+    - ptemcee
+    - scikit-image
+    - scipy
+    - tqdm
 
 test:
   imports:
