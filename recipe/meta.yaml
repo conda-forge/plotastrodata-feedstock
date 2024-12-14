@@ -22,12 +22,18 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - numpy
-    - scipy
     - astropy-base
-    - matplotlib-base
-    - ptemcee
     - corner
+    - dynesty
+    - matplotlib-base
+    - multiprocess
+    - numpy
+    - pillow
+    - plotly
+    - ptemcee
+    - scikit-image
+    - scipy
+    - tqdm
 
 test:
   imports:
