@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "plotastrodata" %}
-{% set version = "1.0.5" %}
+{% set version = "1.0.5.post2" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/plotastrodata-{{ version }}.tar.gz
-  sha256: a336e38dc13228a5e32331ec1b9ca22825296d81f92156598bf45769cf91a1ce
+  sha256: 5cfdb97adf597b48853d5a4a07eb7814a886b89854e4862a2b6cadfcef03e068
 
 build:
   noarch: python
