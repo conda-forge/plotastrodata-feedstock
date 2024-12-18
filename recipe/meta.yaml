@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "plotastrodata" %}
-{% set version = "1.0.5.post2" %}
+{% set version = "1.0.6" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/plotastrodata-{{ version }}.tar.gz
-  sha256: 5cfdb97adf597b48853d5a4a07eb7814a886b89854e4862a2b6cadfcef03e068
+  sha256: 2ce149ced44759851163d810e557bd7e2f6b7197702bb9d51fbc5fa7f451f972
 
 build:
   noarch: python
@@ -46,7 +46,7 @@ test:
 
 about:
   home: https://github.com/yusukeaso-astron/plotastrodata
-  summary: plotastrodata can be used mainly to make figures from FITS files, as well as other analyses in astronomy.
+  summary: plotastrodata is a tool for astronomers to create figures from FITS files and perform fundamental data analyses with ease.
   license: GPL-2.0-or-later
   license_file: LICENSE
 
