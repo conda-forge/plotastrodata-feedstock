@@ -7,7 +7,7 @@ Home: https://github.com/yusukeaso-astron/plotastrodata
 
 Package license: GPL-2.0-or-later
 
-Summary: plotastrodata can be used mainly to make figures from FITS files, as well as other analyses in astronomy.
+Summary: plotastrodata is a tool for astronomers to create figures from FITS files and perform fundamental data analyses with ease.
 
 Current build status
 ====================
