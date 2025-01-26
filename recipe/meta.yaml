@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "plotastrodata" %}
-{% set version = "1.1.2.post1" %}
+{% set version = "1.1.3" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/plotastrodata-{{ version }}.tar.gz
-  sha256: 404edddba326c45a59af0b3abc732df19ee3d89e16c1c8ac839feadd580c71ef
+  sha256: 7227e825d8ae4a0968cda6df63022d273379025d116cd3a71af53bb54e417e22
 
 build:
   noarch: python
@@ -25,6 +25,7 @@ requirements:
     - astropy-base
     - corner
     - dynesty
+    - emcee
     - matplotlib-base
     - multiprocess
     - numpy
