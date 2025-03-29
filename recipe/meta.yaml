@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "plotastrodata" %}
-{% set version = "1.2.7.post1" %}
+{% set version = "1.2.7.post3" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/plotastrodata-{{ version }}.tar.gz
-  sha256: b52f7cec416ca285c0eef62b0e3c103d7abd9fa836664b0bd7d4736e38c96c82
+  sha256: 6368547899a0aa0b8c0083d086ce20b34b7b5af9fd0b3ca8082c2ad0cde9ea3a
 
 build:
   noarch: python
@@ -28,7 +28,7 @@ requirements:
     - emcee
     - matplotlib-base
     - multiprocess
-    - numpy
+    - numpy >=2.0
     - pillow
     - plotly
     - ptemcee
