@@ -28,7 +28,7 @@ requirements:
     - emcee
     - matplotlib-base
     - multiprocess
-    - numpy
+    - numpy >=2.0
     - pillow
     - plotly
     - ptemcee
