@@ -47,6 +47,7 @@ test:
 
 about:
   home: https://github.com/yusukeaso-astron/plotastrodata
+  doc_url: https://plotastrodata.readthedocs.io
   summary: plotastrodata is a tool for astronomers to create figures from FITS files and perform fundamental data analyses with ease.
   license: GPL-2.0-or-later
   license_file: LICENSE
