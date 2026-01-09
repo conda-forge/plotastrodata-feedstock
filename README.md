@@ -9,6 +9,8 @@ Package license: GPL-2.0-or-later
 
 Summary: plotastrodata is a tool for astronomers to create figures from FITS files and perform fundamental data analyses with ease.
 
+Documentation: https://plotastrodata.readthedocs.io
+
 Current build status
 ====================
 
