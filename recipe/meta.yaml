@@ -1,4 +1,4 @@
-{% set python_min = "3.12" %}
+{% set python_min = "3.11" %}
 {% set name = "plotastrodata" %}
 {% set version = "1.9.20" %}
 
@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
