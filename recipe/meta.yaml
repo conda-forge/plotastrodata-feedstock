@@ -25,9 +25,8 @@ requirements:
     - astropy-base >=7.2
     - corner
     - dynesty
-    - emcee
+    - emcee >= 3.1.5
     - matplotlib-base
-    - multiprocess
     - numpy >=2.0
     - pillow
     - plotly
