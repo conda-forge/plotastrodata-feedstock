@@ -1,14 +1,14 @@
 {% set python_min = "3.11" %}
 {% set name = "plotastrodata" %}
-{% set version = "1.9.21" %}
+{% set version = "1.10.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/plotastrodata-{{ version }}.tar.gz
-  sha256: 363115d38015774f17ec33430b847ddb4f0f74e7b5df7499c045bb12df851acf
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/plotastrodata-{{ version }}.tar.gz
+  sha256: e3bb01cd375e8b8826252c76ca936587d95db3315fca307a939b7cc2e1c5864a
 
 build:
   noarch: python
@@ -31,6 +31,7 @@ requirements:
     - pillow
     - plotly
     - ptemcee
+    - pydantic >=2
     - scikit-image
     - scipy
     - tqdm
