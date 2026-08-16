@@ -31,6 +31,7 @@ requirements:
     - pillow
     - plotly
     - ptemcee
+    - pydantic >=2
     - scikit-image
     - scipy
     - tqdm
