@@ -1,0 +1,63 @@
+schema_version: 1
+
+context:
+  python_min: "3.11"
+  name: plotastrodata
+  version: "1.12.0"
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://files.pythonhosted.org/packages/source/${{ name[0] }}/${{ name }}/plotastrodata-${{ version }}.tar.gz
+  sha256: cbba6ee7870c1bb2c10686373af434b38ba833ffac4e689447f6c387a0c448d8
+
+build:
+  noarch: python
+  script: python -m pip install . --no-deps --no-build-isolation -vv
+  number: 1
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - pip
+    - setuptools
+  run:
+    - python >=${{ python_min }}
+    - astropy-base >=7.2
+    - corner
+    - dynesty
+    - emcee >=3.1.5
+    - matplotlib-base
+    - numpy >=2.0
+    - pillow
+    - plotly
+    - ptemcee
+    - pydantic >=2
+    - scikit-image
+    - scipy
+    - tqdm
+
+tests:
+  - python:
+      imports:
+        - plotastrodata
+        - plotastrodata.plot_utils
+        - plotastrodata.analysis_utils
+        - plotastrodata.fits_utils
+      pip_check: true
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
+
+about:
+  homepage: https://github.com/yusukeaso-astron/plotastrodata
+  documentation: https://plotastrodata.readthedocs.io
+  summary: plotastrodata is a tool for astronomers to create figures from FITS files and perform fundamental data analyses with ease.
+  license: GPL-3.0-or-later
+  license_file: LICENSE
+
+extra:
+  recipe-maintainers:
+    - yusukeaso-astron
