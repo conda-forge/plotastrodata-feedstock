@@ -3,7 +3,7 @@ schema_version: 1
 context:
   python_min: "3.11"
   name: plotastrodata
-  version: "1.12.2"
+  version: "1.12.3"
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/${{ name[0] }}/${{ name }}/plotastrodata-${{ version }}.tar.gz
-  sha256: 709ee12dbb620524b1eb07fb363302948ff71ee518c94169c35650dab306336c
+  sha256: 00278095cd368a6da0781558904a276e2c19cb7efb14ced80521ec887c469478
 
 build:
   noarch: python
