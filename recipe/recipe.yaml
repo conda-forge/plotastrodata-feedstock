@@ -1,7 +1,6 @@
 schema_version: 1
 
 context:
-  python_min: "3.11"
   name: plotastrodata
   version: "1.13.0"
 
@@ -35,6 +34,7 @@ requirements:
     - plotly
     - ptemcee
     - pydantic >=2
+    - pypdf >=6.21.2
     - scikit-image
     - scipy
     - tqdm
@@ -46,6 +46,7 @@ tests:
         - plotastrodata.plot_utils
         - plotastrodata.analysis_utils
         - plotastrodata.fits_utils
+        - plotastrodata.pngpdf_utils
       pip_check: true
       python_version:
         - ${{ python_min }}.*
